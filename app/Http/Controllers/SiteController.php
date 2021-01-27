@@ -16,6 +16,10 @@ class SiteController extends Controller
 
     public function test()
     {
-        return view('site.test');
+        return view('site.test', [
+            'isActive' => false,
+            'massage1' => 'Hello World',
+            'massage2' => 'Good Buy'
+        ]);
     }
 }
