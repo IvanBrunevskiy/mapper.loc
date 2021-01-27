@@ -13,4 +13,9 @@ class SiteController extends Controller
             'user' => $userIvan
         ]);
     }
+
+    public function test()
+    {
+        return view('site.test');
+    }
 }
